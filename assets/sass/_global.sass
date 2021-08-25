@@ -1,0 +1,156 @@
+@font-face
+  font-family: "Jeko"
+  src: url('../fonts/Jeko/JekoExtraBold.woff2') format("woff2"), url('../fonts/Jeko/JekoExtraBold.woff') format("woff")
+  font-weight: 700
+
+@font-face
+  font-family: "Jeko"
+  src: url('../fonts/Jeko/JekoSemiBold.woff2') format("woff2"), url('../fonts/Jeko/JekoSemiBold.woff') format("woff")
+  font-weight: 500
+
+*
+  box-sizing: border-box
+
+// main
+//   overflow-x: auto
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'Jeko'
+  font-size: 20px
+  color: $black-color
+  background-color: #fff
+  overflow-x: hidden 
+
+h1, h2, h3, h4, h5, h6, p, ul, li, button
+  margin: 0
+  padding: 0
+
+a
+  margin: 0
+  padding: 0
+  text-decoration: none
+
+p
+  font-size: 20px
+  font-weight: 500
+  line-height: 1.8
+
+button
+  font-family: 'Jeko'
+
+.container
+  max-width: 1280px
+  margin: 0 auto
+  padding: 0 30px
+
+.container-full
+  max-width: 100%
+  margin: 0 auto
+  padding: 0 30px
+
+.button
+  padding: 0 25px
+  background-color: $black-color
+  transition: opacity .3s ease
+  color: #fff
+  border-radius: 60px
+  cursor: pointer
+  font-size: 16px
+  height: 50px
+  line-height: 100%
+  font-weight: 700
+  border: none
+
+.s-padding
+  padding-top: 200px
+
+.button-white
+  padding: 0 25px
+  line-height: 100%
+  height: 50px
+  background-color: #fff
+  transition: all .2s ease
+  color: $black-color
+  border-radius: 60px
+  cursor: pointer
+  font-size: 16px
+  font-weight: 700
+  border: 1px solid $black-color
+
+  &:hover
+    background-color: $black-color
+    color: #fff
+
+.s-title
+  font-size: 56px
+
+.link
+  font-size: 16px
+  font-weight: 700
+  color: $black-color
+  position: relative
+
+  &:after
+    content: ''
+    display: block
+    width: 100%
+    height: 1px
+    background-color: $black-color
+    opacity: 0.2
+    position: absolute
+    left: 0
+    bottom: 0px
+    z-index: 1
+
+  &:before
+    content: ''
+    display: block
+    width: 0
+    height: 1px
+    background-color: $black-color
+    transition: width .5s ease
+    position: absolute
+    bottom: 0
+    left: 0
+    z-index: 10
+
+  &:hover:before
+    width: 100%
+
+.white-link
+  color: #fff
+  position: relative
+
+  &:after
+    content: ''
+    display: block
+    width: 100%
+    height: 1px
+    background-color: #fff
+    opacity: 0.2
+    position: absolute
+    left: 0
+    bottom: -5px
+    z-index: 1
+
+  &:before
+    content: ''
+    display: block
+    width: 0
+    height: 1px
+    background-color: #fff
+    transition: width .5s ease
+    position: absolute
+    bottom: -5px
+    left: 0
+    z-index: 10
+
+  &:hover:before
+    width: 100%
+
+.bg-set
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover

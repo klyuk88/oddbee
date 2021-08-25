@@ -1,0 +1,173 @@
+.work-cover
+  height: 100vh
+  margin-top: 0 !important
+  background-position-x: left
+  position: relative
+
+.single-work-tags
+  padding-top: 50px
+
+.single-work-tags-wrap
+  display: inline-grid
+  grid-template-columns: 1fr 1fr 1fr
+  width: 100%
+
+  h6
+    font-size: 14px
+    color: #222
+    font-weight: 500
+    margin-right: 10px
+
+  .tag-item
+    display: flex
+
+  ul
+    list-style: none
+    padding: 0
+    display: flex
+    align-items: center
+
+    li
+      color: #999
+      font-size: 14px
+      font-weight: 500
+
+  li
+    &:after
+      content: '•'
+      margin-left: 5px
+      margin-right: 5px
+
+    &:last-child:after
+      content: ""
+
+.single-work-title
+  font-size: 86px
+  font-weight: 700
+
+.challenge-title
+  font-size: 52px
+  font-weight: 700
+
+.challenge-text
+  font-size: 20px
+
+.s-challenge-line
+  width: 100%
+  position: relative
+  height: 2px
+  background: #222
+  margin-bottom: 70px
+
+.s-single-work-title
+  padding: 80px 0
+
+.s-challenge
+  padding-bottom: 80px
+
+.s-challenge-grid
+  display: inline-grid
+  grid-template-columns: 1fr 2fr
+
+.single-work-link-wrap
+  margin-top: 40px
+  display: flex
+  align-items: center
+
+.single-work-arrow
+  width: 13px
+  position: relative
+  left: 10px
+  top: 2px
+  transform: rotate(-45deg)
+  transition: transform .3s ease
+
+.single-work-link-wrap:hover .single-work-arrow
+  transform: rotate(0)
+
+//cover up styles
+// .work-cover
+//   position: absolute
+//   width: 100%
+//   height: 100vh
+//   top: 0
+//   left: 0
+//   z-index: 50
+
+.section-review
+  padding: 150px 0
+
+.review-block
+  position: relative
+  width: 90%
+  margin: 0 auto
+
+.review-quotes
+  position: absolute
+  transform: translate(-100%, -100%)
+
+.review-content
+  font-size: 38px
+  font-weight: 700
+  line-height: 1.5
+
+.review-company-block
+  margin-top: 70px
+
+.review-author-name
+  font-size: 24px
+  font-weight: 700
+
+.review-company-name
+  font-size: 16px
+  color: $grey-color
+
+
+
+//related works block
+
+.related-works-link-block
+  display: flex
+  align-items: center
+  img
+    transform: translateX(10px)
+    width: 15px
+
+.related-works-link_more
+  font-size: 16px
+  font-weight: 700
+
+.related-works-title-block
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.related-works-grid
+  margin-top: 80px
+  display: grid
+  grid-template-columns: 31% 31% 31%
+  column-gap: 3%
+
+.related-works-section
+  // padding-top: 100px
+  padding-bottom: 80px
+
+
+
+.cover-block
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  overflow: hidden
+  display: block
+
+.cover-image
+  object-fit: cover
+  display: block
+  width: 100%
+  height: 100%
+
+.related-works-grid .grid-item:first-child .work-item
+  transform: translateY(0)

@@ -1,0 +1,772 @@
+.logo
+  width: 172px
+  height: auto
+  position: relative
+  z-index: 999
+
+.header-content
+  justify-content: space-between
+  position: relative
+
+.navgation-wrap, .header-content, .header-menu, .works-link-wrap, .work-item-tags
+  display: flex
+  align-items: center
+
+.header-menu
+  list-style: none
+
+  li a
+    color: $black-color
+    font-size: 16px
+    font-weight: 700
+    margin-right: 60px
+    position: relative
+
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      bottom: -3px
+      width: 0
+      height: 5px
+      background-color: $accent-color
+      transition: width .3s ease
+
+    &:hover:after
+      width: 100%
+
+.header
+  padding-top: 26px
+  background-color: transparent
+  position: absolute
+  width: 100%
+  z-index: 101
+  top: 0
+  left: 0
+
+.offer
+  padding-top: 76px
+
+.offer-content
+  display: inline-grid
+  width: 100%
+  grid-template-columns: 1fr 1fr
+  // align-items: center
+  div:last-child
+    position: relative
+
+.empty
+  position: absolute
+  width: 100%
+  height: 700px
+  top: 0
+  right: 0
+  background: grey
+
+.animation-video
+  width: 100%
+
+.offer-title
+  font-size: 86px
+  font-weight: 700
+  margin-bottom: 30px
+  margin-top: 100px
+
+.offer-subtitle
+  width: 95%
+
+.works-link-wrap
+  margin-top: 57px
+
+.works-link-image
+  position: relative
+
+.works-link-wrap img
+  margin-right: 12px
+  width: 12px
+
+/* works
+
+.work-item
+  width: 100%
+  margin: 0 auto
+
+.work-item-image-wrap
+  height: 0
+  overflow: hidden
+  border-radius: 6px
+  padding-bottom: 75%
+  width: 100%
+  position: relative
+  z-index: 2
+
+.work-item-title
+  font-size: 20px
+  font-weight: 500
+  margin-top: 20px
+  line-height: 130%
+  span
+    font-weight: 700
+
+  span
+    font-weight: 700
+
+.work-item-tags
+  margin-top: 10px
+
+  p
+    font-size: 14px
+    opacity: 0.5
+    transition: all .3s ease
+    display: flex
+    align-items: center
+    line-height: 100%
+
+    &:after
+      content: '•'
+      margin-left: 10px
+      margin-right: 10px
+
+    &:last-child:after
+      content: ""
+
+.works-wrap
+  display: inline-grid
+  grid-template-columns: 48% 48%
+  column-gap: 2%
+  width: 100%
+  row-gap: 100px
+
+.work-item-image
+  width: 100%
+  height: 100%
+  transition: all .5s ease
+
+.works-btn
+  display: block
+  margin: 0 auto
+  margin-top: 80px
+  line-height: 100%
+  display: flex
+  font-size: 16px
+  height: 40px
+  align-items: center
+  padding: 0 20px
+
+  svg
+    position: relative
+    margin-left: 8px
+    transition: stroke .2s ease, transform .7s ease
+
+  &:hover
+    path
+      stroke: #fff
+
+    svg
+      transform: translateX(7px)
+
+.work-item-link
+  color: $black-color
+
+/* services
+
+.services-title
+  font-size: 56px
+  font-weight: 700
+  width: 60%
+
+.services-item
+  position: relative
+
+.services-item-line
+  top: 0
+  width: 100%
+  height: 2px
+  background-color: $black-color
+  margin-bottom: 25px
+
+.services-items
+  width: 100%
+  margin-top: 90px
+  display: inline-grid
+  grid-template-columns: repeat(4, 22%)
+  column-gap: 3%
+  row-gap: 50px
+
+.services-item-title
+  font-size: 24px
+
+.services-item-list
+  list-style: none
+  margin-top: 20px
+
+  li
+    color: $grey-color
+    margin-bottom: 8px
+    font-size: 16px
+
+    &:last-child
+      margin-bottom: 0
+
+/* approach
+
+.approach-wrap
+  display: inline-grid
+  grid-template-columns: 40% 60%
+
+.approach-description
+  margin-bottom: 50px
+
+/* clients
+
+.clients
+  padding-bottom: 100px
+
+.clients-wrap
+  display: grid
+  width: 100%
+  grid-template-columns: repeat(5, 17%)
+  column-gap: 3%
+  row-gap: 80px
+  align-items: center
+
+.client-logo
+  display: block
+  margin: 0 auto
+  max-width: 90%
+  max-height: 50px
+
+.clients-line
+  width: 100%
+  height: 2px
+  background-color: $black-color
+  margin-bottom: 100px
+
+/* footer
+
+.footer
+  background-color: $black-color
+  position: fixed
+  bottom: 0
+  left: 0
+  width: 100%
+  z-index: -1
+
+main
+  position: relative
+  background-color: #fff
+
+.footer-content
+  padding: 100px 0
+  display: flex
+  align-items: center
+  position: relative
+
+.footer-title
+  color: #fff
+  line-height: 100%
+
+  .call-form-btn
+    position: relative
+    cursor: pointer
+
+.footer-arrow
+  margin-left: 35px
+  transition: all .3s ease
+
+.call-form-btn-line
+  position: absolute
+  left: 0
+  bottom: -20px
+  width: 100%
+  height: 6px
+  background-color: $accent-color
+  transition: all .3s ease
+
+// .footer-title .call-form-btn:hover .call-form-btn-line
+//   width: 0
+
+/* basement
+
+.basement
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 40px 0
+  position: relative
+
+.basement-links
+  display: flex
+  width: 60%
+
+.basement-social
+  display: flex
+  align-items: center
+
+  a
+    margin-right: 60px
+
+    &:last-child
+      margin-right: 0
+
+.basement-links
+  p
+    color: #fff
+    font-size: 16px
+
+  a
+    color: #fff
+    transition: all .3s ease
+
+.basement-social a svg > g > g
+  transition: all .3s ease
+
+.basement-links p:first-child
+  margin-right: 30px
+
+.basement-line
+  width: 100%
+  height: 1px
+  background-color: $grey-color
+  position: absolute
+  top: 0
+  left: 0
+
+.basement-social a:hover svg > g > g
+  fill: $accent-color
+  transition: all .3s ease
+
+/* popup
+
+.form-popup
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1000
+  background-color: $black-color
+  width: 100%
+  height: 100%
+  overflow-x: hidden
+  display: none
+
+.form-popup-grid
+  display: inline-grid
+  grid-template-columns: 40% 50%
+  column-gap: 3%
+  width: 100%
+
+.form-title, .thanks-title
+  color: #fff
+  font-weight: 700
+  margin-bottom: 30px
+  position: relative
+  line-height: 100%
+
+.form-text, .thanks-text
+  color: #fff
+  position: relative
+  width: 90%
+
+.popup-form
+  position: relative
+  padding-bottom: 50px
+
+.popup-form-title
+  color: #fff
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 25px
+
+.checkbox-set
+  display: flex
+  align-items: center
+
+.checkbox-item
+  margin-right: 10px
+
+  label
+    color: #fff
+    font-size: 14px
+    font-weight: 700
+    padding: 10px 20px
+    border: 1px solid #fff
+    border-radius: 30px
+    cursor: pointer
+    transition: all .3s ease
+
+    &:hover
+      background-color: #fff
+      color: $black-color
+
+  input
+    width: 0
+    height: 0
+    opacity: 0
+    position: absolute
+    left: 10000px
+
+    &:checked + label
+      background-color: #fff
+      color: $black-color
+
+.form-item
+  margin-bottom: 40px
+
+.input-set
+  display: grid
+  grid-template-columns: 44% 44%
+  column-gap: 6%
+  row-gap: 40px
+
+.input-item
+  position: relative
+  input, textarea
+    padding: 13px 0 13px 20px
+    border-radius: 5px
+    background-color: #fff
+    width: 100%
+    border: none
+    box-sizing: border-box
+    font-size: 16px
+    box-shadow: none
+    font-family: 'Jeko'
+    appearance: none
+
+  input:focus
+    outline: none
+    border-color: $accent-color
+
+  textarea
+    &:focus
+      outline: none
+      border-color: $accent-color
+
+      height: 140px
+
+  input::placeholder, textarea::placeholder
+    font-family: 'Jeko'
+    color: #646464
+
+  &:nth-child(3)
+    grid-column-start: 1
+    grid-column-end: 3
+
+#form-file
+  width: 0
+  height: 0
+  opacity: 0
+  position: absolute
+  left: -1000px
+
+.form-file-label
+  font-size: 16px
+  color: #fff
+  font-weight: 500
+  cursor: pointer
+  display: flex
+  align-items: center
+
+  img
+    margin-left: 15px
+
+.form-item:nth-child(3)
+  margin-bottom: 0
+
+.form-attach
+  margin-top: 15px
+  display: inline-block
+
+.submit-form-btn
+  background-color: $accent-color
+  font-size: 16px
+  color: $black-color
+  font-weight: 700
+  border: none
+  border-radius: 60px
+  display: flex
+  align-items: center
+  cursor: pointer
+  margin-top: 30px
+  height: 50px
+  padding: 0 45px
+  line-height: 100%
+
+  img
+    margin-left: 10px
+    transform: rotate(-45deg)
+    transition: all .3s ease
+
+  &:hover img
+    transform: rotate(0) translateX(5px)
+
+.form-container
+  max-width: 1280px
+  padding: 0 15px
+  margin: 0 auto
+  margin-top: 100px
+  overflow-x: hidden
+
+.form-close, .thanks-popup-close
+  position: absolute
+  top: 20px
+  right: 20px
+  cursor: pointer
+  transition: opacity .3s ease
+
+  &:hover
+    opacity: 0.6 !important
+
+.input-label
+  margin-bottom: 12px
+
+.mob-offer-subtitle
+  font-size: 14px
+  display: none
+
+.swipe-down-btn
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 30px
+  display: none
+
+  p
+    font-weight: 700
+    font-size: 16px
+    margin-left: 10px
+
+/* mob-menu-icon
+
+.mob-menu-icon
+  width: 25px
+  display: none
+
+  div
+    width: 100%
+    height: 2px
+    background-color: $black-color
+    position: relative
+
+    &:first-child
+      margin-bottom: 5px
+
+.footer-title br, .basement-links br
+  display: none
+
+/* mob-menu
+
+.mob-menu-wrap
+  position: fixed
+  background-color: #fff
+  width: 100%
+  height: 100%
+  z-index: 100
+  left: 0
+  padding: 26px 15px 45px 15px
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  transform: translate3d(0, -200%, 0)
+  display: none
+
+.mob-menu
+  list-style: none
+
+  li
+    margin-bottom: 50px
+    a
+      font-size: 24px
+      color: $black-color
+      font-weight: 700
+
+.header-btn
+  transition: opacity .3s ease
+  height: 40px
+
+  &:hover
+    opacity: 0.8
+
+.mob-header-btn
+  height: auto !important
+  font-size: 24px
+  padding: 15px 25px
+  font-weight: 700
+
+.mob-menu-socials
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-around
+
+  a
+    color: $black-color
+    font-size: 14px
+
+.mob-menu-and-button
+  text-align: center
+
+.mob-menu-icon
+  position: absolute
+  right: 1px
+  top: 10px
+  z-index: 200
+
+.file-name
+  display: flex
+  align-items: center
+  display: none
+  margin-top: 5px
+
+  span
+    font-size: 12px
+    color: $accent-color
+    margin-left: 5px
+
+  img
+    height: 12px
+    width: auto
+
+/* test work item img
+
+.item-image-link
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  display: block
+  border-radius: 6px
+  overflow: hidden
+
+.work-image
+  width: 100%
+  height: 100%
+  display: block
+  object-fit: cover
+  transition: all .5s ease
+
+.work-item-image-wrap:hover .work-image
+  transform: scale(1.1)
+
+.work-item a
+  color: $black-color
+
+.transition-pages
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: $accent-color
+  width: 100%
+  height: 100%
+  z-index: 10000
+  // display: none
+
+.transition-pages-up
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: $accent-color
+  width: 100%
+  height: 100%
+  transform: translateY(100%)
+  z-index: 10000
+  display: none
+
+.transition-pages-logo
+  width: 50px
+
+.thanks-video
+  width: 60%
+  height: auto
+  display: block
+  margin-left: auto
+  svg
+    width: 100%
+
+.link-thanks-page
+  font-size: 20px
+  color: #fff
+  text-decoration: underline
+  font-weight: 500
+  display: inline-block
+
+.empty-field
+  color: $grey-color
+  font-size: 12px
+  font-weight: 500
+  margin-top: 15px
+  position: absolute
+  left: 0
+  display: none
+
+.logo-anim
+  width: 173px
+  height: auto
+
+.grid-item:first-child
+  .work-item
+    transform: translateY(200px)
+
+.works-wrap.work-page.filter
+  .grid-item:first-child
+    .work-item
+      transform: translateY(0)
+
+#works
+  padding-bottom: 0
+
+//404
+
+.not-found-content-block
+  display: flex
+  align-items: center
+  h2
+    font-size: 186px
+  .anim-not-found
+    width: 250px
+    height: auto
+
+.not-found-title
+  font-size: 32px
+
+.not-found-content-wrap
+  display: flex
+  align-items: center
+  flex-direction: column
+  padding: 200px 0
+
+// .footer.footer-not-found
+//   position: relative
+
+.not-found-number
+  display: none
+  font-size: 60px
+  font-weight: 700
+
+
+.thanks-popup
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: $black-color
+  z-index: 1000
+  display: none
+  .thanks-title, .thanks-text, .thanks-video
+    opacity: 0
+
+
+.logo-link
+  transform: translateX(-4px)
+
+.politic-content
+  padding: 100px 0
